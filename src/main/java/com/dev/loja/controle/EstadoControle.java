@@ -44,6 +44,7 @@ public class EstadoControle {
 		Optional<Estado>estado = estadoRepositorio.findById(id);
 		return cadastrar(estado.get());
 	}
+	
 
 	@GetMapping("/administrativo/estados/remover/{id}")
 	public ModelAndView remover(@PathVariable("id") Long id) {
