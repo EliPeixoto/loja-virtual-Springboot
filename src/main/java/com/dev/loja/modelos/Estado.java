@@ -26,6 +26,7 @@ public class Estado implements Serializable {
 
 	private String nome;
 	private String sigla;
+	
 	public Long getId() {
 		return id;
 	}
@@ -45,7 +46,5 @@ public class Estado implements Serializable {
 		this.sigla = sigla;
 	}
 
-
-	
-
+		
 }
