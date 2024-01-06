@@ -55,5 +55,12 @@ public class FuncionarioControle {
 		Optional<Funcionario>funcionario = funcionarioRepositorio.findById(id);
 		return cadastrar(funcionario.get());
 	}
+	
+	@GetMapping("administrativo/funcionarios/remover/{id}")
+	public ModelAndView remover(@PathVariable("id") Long id) {
+		Optional<Funcionario>funcionario = funcionarioRepositorio.findById(id);
+		funcionarioRepositorio.delete(funcionario.get());
+		return listar();
+	}
 
 }
