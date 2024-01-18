@@ -12,7 +12,7 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 @Entity
-@Table(name="produto")
+@Table(name="produtos")
 public class Produto implements Serializable{
 
 	
@@ -30,6 +30,8 @@ public class Produto implements Serializable{
 	private String valorVenda;
 	private String categoria;
 	private String marca;
+	private Double quantidadeEstoque=0.;
+	
 	
 	
 	public Long getId() {
@@ -63,6 +65,12 @@ public class Produto implements Serializable{
 		this.marca = marca;
 	}
 	
+	public Double getQuantidadeEstoque() {
+		return quantidadeEstoque;
+	}
+	public void setQuantidadeEstoque(Double quantidadeEstoque) {
+		this.quantidadeEstoque = quantidadeEstoque;
+	}
 }
 
 
