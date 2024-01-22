@@ -78,6 +78,14 @@ public class EntradaProdutoControle {
 		
 			if (acao.equals("itens")) {
 				this.listaEntrada.add(entradaItens);
+			}else if(acao.equals("salvar")){
+				entradaProdutoRepositorio.saveAndFlush(entrada);
+				for(EntradaItens it:listaEntrada) {
+					it.setEntrada(entrada);
+					entradaItensRepositorio.saveAndFlush(it);
+				}
+				
+				
 			}
 			
 			System.out.println(this.listaEntrada.size());
