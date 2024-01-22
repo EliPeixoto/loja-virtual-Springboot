@@ -85,14 +85,14 @@
 							autofocus="autofocus" th:field="*{valorProduto}" value="" />
 						<div class="invalid-feedback"></div>
 					</div>
-					
-				
+
+
 
 					<div class="form-group col-md-2">
 						<!-- 					<label for="add">Ação</label>  -->
 						<br />
-						<button id="add" name="acao" style="margin-top:8px" th:value="itens" type="submit"
-							class="btn btn-primary">ADD</button>
+						<button id="add" name="acao" style="margin-top: 8px"
+							th:value="itens" type="submit" class="btn btn-primary">ADD</button>
 					</div>
 
 				</div>
@@ -106,7 +106,6 @@
 										<th>Descrição</th>
 										<th>Quantidade</th>
 										<th>Valor Custo</th>
-
 									</tr>
 								</thead>
 								<tbody>
@@ -114,19 +113,15 @@
 										<td th:text="${itens.produto.descricao}"></td>
 										<td th:text="${itens.quantidade}"></td>
 										<td th:text="${itens.valorProduto}"></td>
-
-
-
-									</tr>
+								</tr>
 								</tbody>
 							</table>
 						</div>
 					</div>
 				</div>
-
 				<input type="hidden" id="id" th:field="*{id}" value="" />
-				<button type="submit" class="btn btn-primary btn-lg btn-block" name="acao"
-					th:value="salvar">Salvar</button>
+				<button type="submit" class="btn btn-primary btn-lg btn-block"
+					name="acao" th:value="salvar">Salvar</button>
 			</form>
 
 		</div>
