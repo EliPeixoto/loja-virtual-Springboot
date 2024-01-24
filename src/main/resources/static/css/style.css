@@ -93,6 +93,11 @@ button {
 	color: white;
 }
 
+.btn-primary{
+	background-color:#232f3e;
+	border-color: transparent;
+}
+
 /*
  * Sidebar
  */
@@ -134,7 +139,7 @@ button {
 
 .sidebar ul li a {
 	display: block;
-	color: #1a1a1a;
+	color: #232f3e;
 	padding: 10px 15px;
 	white-space: nowrap;
 }
@@ -148,7 +153,7 @@ button {
  */
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
 	color: #fff;
-	background-color: #1e94d2;
+	background-color: #232f3e;
 }
 
 /*
@@ -180,5 +185,5 @@ button {
 }
 
 ion-icon {
-	color: #1E94D2;
+	color: #232f3e;
 }
