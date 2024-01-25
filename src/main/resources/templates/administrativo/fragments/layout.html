@@ -35,7 +35,7 @@
 								</a></li>
 							<li class="nav-item"><a class="nav-link" href="#"> <img class="nome"
 										th:src="@{/image/nome.svg}" alt="Nome">
-							</a></li>
+								</a></li>
 						</ul>
 					</div>
 				</div>
@@ -62,107 +62,190 @@
 		</div>
 		<div class="offcanvas-body">
 			<div>
-				<div class="accordion" id="accordionExample">
+				<div>
 
-					<div class="accordion-item ">
-						<h2 class="accordion-header" id="headingOne">
-							<button class="accordion-button" style="background-color: #e3f2fd;" type="button"
-								data-bs-toggle="collapse" data-bs-target="#collapseOneAdmin" aria-expanded="true"
-								aria-controls="collapseOne">Menu Adm
+					<div class="titulo-itens-menu">
+						<h2>
+							<div style="background-color: transparent; border: none;"><strong>Menu Adm</strong>
 								<i class="glyphicon glyphicon-cog"></i>
 
-							</button>
+							</div>
 
 						</h2>
 					</div>
+
 					<div id="collapseOneAdmin" class="accordion-collapse collapse show" aria-labelledby="headingOne"
 						data-bs-parent="#accordionExample">
 						<div class="accordion-body">
 							<ul class="nav nav-pills">
-								<li class="nav-item"><span class="nav-link active">Entrada
-										Produtos</span></li>
-								<li class="nav-item"><a class="nav-link" href="/administrativo/entrada/cadastrar"> <i
-											class="oi oi-plus"></i> <span>Cadastrar </span>
-									</a></li>
-								<li class="nav-item"><a class="nav-link" href="/administrativo/entrada/listar"> <i
-											class="oi oi-spreadsheet"></i> <span>Listar </span>
-									</a></li>
+								<br class="accordion-header">
+								<button class="accordion-button" type="button" data-bs-toggle="collapse"
+									data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									Entrada Produtos</button>
+								</br>
+								</h2>
 							</ul>
-							<ul class="nav nav-pills">
-								<li class="nav-item"><span class="nav-link active">Funcionários</span></li>
-								<li class="nav-item"><a class="nav-link" href="/administrativo/funcionarios/cadastrar">
-										<i class="oi oi-plus"></i> <span>Cadastrar </span>
-									</a></li>
-								<li class="nav-item"><a class="nav-link" href="/administrativo/funcionarios/listar"> <i
-											class="oi oi-spreadsheet"></i> <span>Listar </span>
-									</a></li>
-							</ul>
-							<ul class="nav nav-pills">
-								<li class="nav-item"><span class="nav-link active">Estados</span></li>
-								<li class="nav-item"><a class="nav-link" href="/administrativo/estados/cadastrar"> <i
-											class="oi oi-plus"></i> <span>Cadastrar </span>
-									</a></li>
-								<li class="nav-item"><a class="nav-link" href="/administrativo/estados/listar"> <i
-											class="oi oi-spreadsheet"></i> <span>Listar </span>
-									</a></li>
-							</ul>
-							<ul class="nav nav-pills">
-								<li class="nav-item"><span class="nav-link active">Cidades</span></li>
-								<li class="nav-item"><a class="nav-link" href="/administrativo/cidades/cadastrar"> <i
-											class="oi oi-plus"></i> <span>Cadastrar </span>
-									</a></li>
-								<li class="nav-item"><a class="nav-link" href="/administrativo/cidades/listar"> <i
-											class="oi oi-spreadsheet"></i> <span>Listar </span>
-									</a></li>
-							</ul>
-							<ul class="nav nav-pills">
-								<li class="nav-item"><span class="nav-link active">Produtos</span></li>
-								<li class="nav-item"><a class="nav-link" href="/administrativo/produtos/cadastrar"> <i
-											class="oi oi-plus"></i> <span>Cadastrar </span>
-									</a></li>
-								<li class="nav-item"><a class="nav-link" href="/administrativo/produtos/listar"> <i
-											class="oi oi-spreadsheet"></i> <span>Listar </span>
-									</a></li>
-							</ul>
+							<div>
+								<div id="collapseOne" class="accordion-collapse collapse "
+									data-bs-parent="#accordionExample">
+									<div class="accordion-body"><a class="nav-link"
+											href="/administrativo/entrada/cadastrar"> <i class="oi oi-plus"></i>
+											<span class="span-itens">Cadastrar </span>
+										</a>
+
+										<a class="nav-link" href="/administrativo/entrada/listar"> <i
+												class="oi oi-spreadsheet"></i> <span class="span-itens">Listar
+												</spanclass="span-itens">
+										</a>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="accordion-item">
-					<h2 class="accordion-header" id="headingTwo">
-						<button class="accordion-button" style="background-color: #e3f2fd;" type="button"
-							data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true"
-							aria-controls="collapseTwo">Menu
-							Cliente</button>
-					</h2>
-					<div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
+						<div id="collapseThreeAdmin" class="accordion-collapse collapse show" aria-labelledby="headingOne"
 						data-bs-parent="#accordionExample">
 						<div class="accordion-body">
+							<ul class="nav nav-pills">
+								<br class="accordion-header">
+								<button class="accordion-button" type="button" data-bs-toggle="collapse"
+									data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									Funcionários</button>
+								</br>
+								</h2>
+							</ul>
+							<div id="collapseOne" class="accordion-collapse collapse"
+								data-bs-parent="#accordionExample">
+								<div class="accordion-body"><a class="nav-link"
+										href="/administrativo/funcionarios/cadastrar"> <i class="oi oi-plus"></i>
+										<span class="span-itens">Cadastrar </span>
+									</a>
 
-							<ul class="nav nav-pills">
-								<li class="nav-item"><span class="nav-link active">Teste
-										Cliente 1</span></li>
-								<li class="nav-item"><a class="nav-link" href="/administrativo/entrada/cadastrar"> <i
-											class="oi oi-plus"></i> <span>Cadastrar </span>
-									</a></li>
-								<li class="nav-item"><a class="nav-link" href="/administrativo/entrada/listar"> <i
-											class="oi oi-spreadsheet"></i> <span>Listar </span>
-									</a></li>
-							</ul>
-							<ul class="nav nav-pills">
-								<li class="nav-item"><span class="nav-link active">Teste
-										Cliente 2</span></li>
-								<li class="nav-item"><a class="nav-link" href="/administrativo/funcionarios/cadastrar">
-										<i class="oi oi-plus"></i> <span>Cadastrar </span>
-									</a></li>
-								<li class="nav-item"><a class="nav-link" href="/administrativo/funcionarios/listar"> <i
-											class="oi oi-spreadsheet"></i> <span>Listar </span>
-									</a></li>
-							</ul>
+									<a class="nav-link" href="/administrativo/funcionarios/listar"> <i
+											class="oi oi-spreadsheet"></i> <span class="span-itens">Listar
+											</spanclass="span-itens">
+									</a>
+								</div>
+							</div>
 						</div>
+						<div id="collapseFourAdmin" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+						data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+							<ul class="nav nav-pills">
+								<br class="accordion-header">
+								<button class="accordion-button" type="button" data-bs-toggle="collapse"
+									data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									Estados</button>
+								</br>
+								</h2>
+							</ul>
+							<div id="collapseOne" class="accordion-collapse collapse"
+								data-bs-parent="#accordionExample">
+								<div class="accordion-body"><a class="nav-link"
+										href="/administrativo/estado/cadastrar"> <i class="oi oi-plus"></i>
+										<span class="span-itens">Cadastrar </span>
+									</a>
+
+									<a class="nav-link" href="/administrativo/estado/listar"> <i
+											class="oi oi-spreadsheet"></i> <span class="span-itens">Listar
+											</spanclass="span-itens">
+									</a>
+								</div>
+							</div>
+						</div>
+						</div>
+						
+							<div id="collapseFiveAdmin" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+						data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<ul class="nav nav-pills">
+								<br class="accordion-header">
+								<button class="accordion-button" type="button" data-bs-toggle="collapse"
+									data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									Cidades</button>
+								</br>
+								</h2>
+							</ul>
+							<div id="collapseOne" class="accordion-collapse collapse"
+								data-bs-parent="#accordionExample">
+								<div class="accordion-body"><a class="nav-link"
+										href="/administrativo/cidades/cadastrar"> <i class="oi oi-plus"></i>
+										<span class="span-itens">Cadastrar </span>
+									</a>
+
+									<a class="nav-link" href="/administrativo/cidades/listar"> <i
+											class="oi oi-spreadsheet"></i> <span class="span-itens">Listar
+											</spanclass="span-itens">
+									</a>
+								</div>
+							</div>
+						</div>
+
+
 					</div>
+						<div id="collapseSixAdmin" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+						data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+							<ul class="nav nav-pills">
+								<br class="accordion-header">
+								<button class="accordion-button" type="button" data-bs-toggle="collapse"
+									data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									Produtos</button>
+								</br>
+								</h2>
+							</ul>
+							<div id="collapseOne" class="accordion-collapse collapse"
+								data-bs-parent="#accordionExample">
+								<div class="accordion-body"><a class="nav-link"
+										href="/administrativo/produtos/cadastrar"> <i class="oi oi-plus"></i>
+										<span class="span-itens">Cadastrar </span>
+									</a>
+
+									<a class="nav-link" href="/administrativo/produtos/listar"> <i
+											class="oi oi-spreadsheet"></i> <span class="span-itens">Listar
+											</spanclass="span-itens">
+									</a>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+					</div>
+		<hr>
+
+		<div class="titulo-itens-menu">
+			<h2>
+
+				Menu Cliente
+			</h2>
+			<div>
+				<div class="accordion-body">
+
+					<ul class="nav nav-pills">
+						<li class="nav-item"><span class="nav-link active">Teste
+								Cliente 1</span></li>
+						<li class="nav-item"><a class="nav-link" href="/administrativo/entrada/cadastrar"> <i
+									class="oi oi-plus"></i> <span>Cadastrar </span>
+							</a></li>
+						<li class="nav-item"><a class="nav-link" href="/administrativo/entrada/listar"> <i
+									class="oi oi-spreadsheet"></i> <span>Listar </span>
+							</a></li>
+					</ul>
+					<ul class="nav nav-pills">
+						<li class="nav-item"><span class="nav-link active">Teste
+								Cliente 2</span></li>
+						<li class="nav-item"><a class="nav-link" href="/administrativo/funcionarios/cadastrar">
+								<i class="oi oi-plus"></i> <span>Cadastrar </span>
+							</a></li>
+						<li class="nav-item"><a class="nav-link" href="/administrativo/funcionarios/listar"> <i
+									class="oi oi-spreadsheet"></i> <span>Listar </span>
+							</a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
+	</div>
+	</div>
 	</div>
 	</div>
 
@@ -171,9 +254,9 @@
 
 		<aside>
 
-	</aside>
-	<section class="layout-content" layout:fragment="corpo">
-		Principal</section>
+		</aside>
+		<section class="layout-content" layout:fragment="corpo">
+			Principal</section>
 
 	</div>
 	<footer class="layout-footer">

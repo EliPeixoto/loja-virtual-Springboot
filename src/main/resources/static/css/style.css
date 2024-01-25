@@ -103,7 +103,21 @@ button {
   }
 
 
+/*
+*menu lateral
+*/
+.titulo-itens-menu h2{
+	color: rgb(0, 0, 0);
+	font-size:medium;
+}
 
+i {
+	color: rgb(192, 192, 192);
+}
+
+.span-itens{
+	color: rgb(128, 128, 128);
+}
 /*
  * Content
  */
