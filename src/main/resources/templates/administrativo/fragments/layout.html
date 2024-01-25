@@ -1,222 +1,215 @@
 <!DOCTYPE html>
-<html lang="pt" xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:th="http://www.thymeleaf.org"
+<html lang="pt" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
 	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 
 <head>
-<title>Loja Virtual com Spring MVC Spring Boot</title>
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport"
-	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-<meta name="description" content="" />
-<meta name="author" content="" />
-<link rel="icon" href="/image/favicon.png" />
+	<title>Loja Virtual com Spring MVC Spring Boot</title>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<link rel="icon" href="/image/favicon.png" />
 
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script type="module"
-	src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule
-	src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<!-- Bootstrap core CSS -->
-<link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-<link href="/webjars/open-iconic/font/css/open-iconic-bootstrap.min.css"
-	rel="stylesheet" />
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	<!-- Bootstrap core CSS -->
+	<link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="/webjars/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet" />
 
-<!-- Custom styles for this template -->
-<link href="/css/style.css" rel="stylesheet" />
+	<!-- Custom styles for this template -->
+	<link href="/css/style.css" rel="stylesheet" />
 </head>
 
 <body>
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-inverse" >
+		<nav class="navbar navbar-expand-lg navbar-inverse">
 			<div>
 				<div class="navbar-header">
 					<div class="navbar-nav">
 						<ul class="nav nav-pills">
 
-							<li class="nav-item"><a class="nav-link" href="/home"> <img
-									class="imagem-logo" th:src="@{/image/logotipo.png}" alt="Home">
+							<li class="nav-item"><a class="nav-link" href="/home"> <img class="imagem-logo"
+										th:src="@{/image/logotipo.png}" alt="Home">
+								</a></li>
+							<li class="nav-item"><a class="nav-link" href="#"> <img class="nome"
+										th:src="@{/image/nome.svg}" alt="Nome">
 							</a></li>
-							<li class="nav-item"><a class="nav-link" href="#"> <img
-									class="nome" th:src="@{/image/nome.svg}" alt="Nome">
-
-							</a></li>
-
 						</ul>
-
 					</div>
-
 				</div>
-
 			</div>
-
 		</nav>
-		<nav class="navbar2" style="height: 800px " >
+		<nav class="navbar2" style="height: 800px ">
 			<div class="menu-todos">
-				<button class="sidebar-toggler" type="button">
-				 <ion-icon id="hamburguer" name="menu-outline" size="large" style="margin-top: 50px; color: white;"></ion-icon>
-				<div  class="span-menu"><span>Todos</span></div>
+				<button class=" btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+					aria-controls="offcanvasExample">
+					<ion-icon id="hamburguer" name="menu-outline" size="large"
+						style="margin-top: 50px; color: white;"></ion-icon>
+					<div class="span-menu"><span>Todos</span></div>
 				</button>
-			</div>		
+			</div>
 
 		</nav>
 	</header>
 
-	<div class="layout-main">
 
-		<aside>
-			<nav class="sidebar sidebar-open" style="height: 800px">
+	<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+		<div class="offcanvas-header">
+			<h5 class="offcanvas-title" id="offcanvasExampleLabel">Olá, usuário!</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		</div>
+		<div class="offcanvas-body">
+			<div>
 				<div class="accordion" id="accordionExample">
 
 					<div class="accordion-item ">
 						<h2 class="accordion-header" id="headingOne">
-							<button class="accordion-button"
-								style="background-color: #e3f2fd;" type="button"
-								data-bs-toggle="collapse" data-bs-target="#collapseOneAdmin"
-								aria-expanded="true" aria-controls="collapseOne">Menu Adm
+							<button class="accordion-button" style="background-color: #e3f2fd;" type="button"
+								data-bs-toggle="collapse" data-bs-target="#collapseOneAdmin" aria-expanded="true"
+								aria-controls="collapseOne">Menu Adm
 								<i class="glyphicon glyphicon-cog"></i>
 
 							</button>
 
 						</h2>
-						<div id="collapseOneAdmin"
-							class="accordion-collapse collapse show"
-							aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-							<div class="accordion-body">
-								<ul class="nav nav-pills">
-									<li class="nav-item"><span class="nav-link active">Entrada
-											Produtos</span></li>
-									<li class="nav-item"><a class="nav-link"
-										href="/administrativo/entrada/cadastrar"> <i
-											class="oi oi-plus"></i> <span>Cadastrar </span>
-									</a></li>
-									<li class="nav-item"><a class="nav-link"
-										href="/administrativo/entrada/listar"> <i
-											class="oi oi-spreadsheet"></i> <span>Listar </span>
-									</a></li>
-								</ul>
-								<ul class="nav nav-pills">
-									<li class="nav-item"><span class="nav-link active">Funcionários</span></li>
-									<li class="nav-item"><a class="nav-link"
-										href="/administrativo/funcionarios/cadastrar"> <i
-											class="oi oi-plus"></i> <span>Cadastrar </span>
-									</a></li>
-									<li class="nav-item"><a class="nav-link"
-										href="/administrativo/funcionarios/listar"> <i
-											class="oi oi-spreadsheet"></i> <span>Listar </span>
-									</a></li>
-								</ul>
-								<ul class="nav nav-pills">
-									<li class="nav-item"><span class="nav-link active">Estados</span></li>
-									<li class="nav-item"><a class="nav-link"
-										href="/administrativo/estados/cadastrar"> <i
-											class="oi oi-plus"></i> <span>Cadastrar </span>
-									</a></li>
-									<li class="nav-item"><a class="nav-link"
-										href="/administrativo/estados/listar"> <i
-											class="oi oi-spreadsheet"></i> <span>Listar </span>
-									</a></li>
-								</ul>
-								<ul class="nav nav-pills">
-									<li class="nav-item"><span class="nav-link active">Cidades</span></li>
-									<li class="nav-item"><a class="nav-link"
-										href="/administrativo/cidades/cadastrar"> <i
-											class="oi oi-plus"></i> <span>Cadastrar </span>
-									</a></li>
-									<li class="nav-item"><a class="nav-link"
-										href="/administrativo/cidades/listar"> <i
-											class="oi oi-spreadsheet"></i> <span>Listar </span>
-									</a></li>
-								</ul>
-								<ul class="nav nav-pills">
-									<li class="nav-item"><span class="nav-link active">Produtos</span></li>
-									<li class="nav-item"><a class="nav-link"
-										href="/administrativo/produtos/cadastrar"> <i
-											class="oi oi-plus"></i> <span>Cadastrar </span>
-									</a></li>
-									<li class="nav-item"><a class="nav-link"
-										href="/administrativo/produtos/listar"> <i
-											class="oi oi-spreadsheet"></i> <span>Listar </span>
-									</a></li>
-								</ul>
-							</div>
-						</div>
 					</div>
-					<div class="accordion-item">
-						<h2 class="accordion-header" id="headingTwo">
-							<button class="accordion-button"
-								style="background-color: #e3f2fd;" type="button"
-								data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-								aria-expanded="true" aria-controls="collapseTwo">Menu
-								Cliente</button>
-						</h2>
-						<div id="collapseTwo"
-							class="accordion-collapse collapse show"
-							aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-							<div class="accordion-body">
-
-								<ul class="nav nav-pills">
-									<li class="nav-item"><span class="nav-link active">Teste
-											Cliente 1</span></li>
-									<li class="nav-item"><a class="nav-link"
-										href="/administrativo/entrada/cadastrar"> <i
+					<div id="collapseOneAdmin" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+						data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<ul class="nav nav-pills">
+								<li class="nav-item"><span class="nav-link active">Entrada
+										Produtos</span></li>
+								<li class="nav-item"><a class="nav-link" href="/administrativo/entrada/cadastrar"> <i
 											class="oi oi-plus"></i> <span>Cadastrar </span>
 									</a></li>
-									<li class="nav-item"><a class="nav-link"
-										href="/administrativo/entrada/listar"> <i
+								<li class="nav-item"><a class="nav-link" href="/administrativo/entrada/listar"> <i
 											class="oi oi-spreadsheet"></i> <span>Listar </span>
 									</a></li>
-								</ul>
-								<ul class="nav nav-pills">
-									<li class="nav-item"><span class="nav-link active">Teste
-											Cliente 2</span></li>
-									<li class="nav-item"><a class="nav-link"
-										href="/administrativo/funcionarios/cadastrar"> <i
+							</ul>
+							<ul class="nav nav-pills">
+								<li class="nav-item"><span class="nav-link active">Funcionários</span></li>
+								<li class="nav-item"><a class="nav-link" href="/administrativo/funcionarios/cadastrar">
+										<i class="oi oi-plus"></i> <span>Cadastrar </span>
+									</a></li>
+								<li class="nav-item"><a class="nav-link" href="/administrativo/funcionarios/listar"> <i
+											class="oi oi-spreadsheet"></i> <span>Listar </span>
+									</a></li>
+							</ul>
+							<ul class="nav nav-pills">
+								<li class="nav-item"><span class="nav-link active">Estados</span></li>
+								<li class="nav-item"><a class="nav-link" href="/administrativo/estados/cadastrar"> <i
 											class="oi oi-plus"></i> <span>Cadastrar </span>
 									</a></li>
-									<li class="nav-item"><a class="nav-link"
-										href="/administrativo/funcionarios/listar"> <i
+								<li class="nav-item"><a class="nav-link" href="/administrativo/estados/listar"> <i
 											class="oi oi-spreadsheet"></i> <span>Listar </span>
 									</a></li>
-								</ul>
-							</div>
+							</ul>
+							<ul class="nav nav-pills">
+								<li class="nav-item"><span class="nav-link active">Cidades</span></li>
+								<li class="nav-item"><a class="nav-link" href="/administrativo/cidades/cadastrar"> <i
+											class="oi oi-plus"></i> <span>Cadastrar </span>
+									</a></li>
+								<li class="nav-item"><a class="nav-link" href="/administrativo/cidades/listar"> <i
+											class="oi oi-spreadsheet"></i> <span>Listar </span>
+									</a></li>
+							</ul>
+							<ul class="nav nav-pills">
+								<li class="nav-item"><span class="nav-link active">Produtos</span></li>
+								<li class="nav-item"><a class="nav-link" href="/administrativo/produtos/cadastrar"> <i
+											class="oi oi-plus"></i> <span>Cadastrar </span>
+									</a></li>
+								<li class="nav-item"><a class="nav-link" href="/administrativo/produtos/listar"> <i
+											class="oi oi-spreadsheet"></i> <span>Listar </span>
+									</a></li>
+							</ul>
 						</div>
 					</div>
 				</div>
-			</nav>
-		</aside>
-		<section class="layout-content" layout:fragment="corpo">
-			Principal</section>
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="headingTwo">
+						<button class="accordion-button" style="background-color: #e3f2fd;" type="button"
+							data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true"
+							aria-controls="collapseTwo">Menu
+							Cliente</button>
+					</h2>
+					<div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
+						data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+
+							<ul class="nav nav-pills">
+								<li class="nav-item"><span class="nav-link active">Teste
+										Cliente 1</span></li>
+								<li class="nav-item"><a class="nav-link" href="/administrativo/entrada/cadastrar"> <i
+											class="oi oi-plus"></i> <span>Cadastrar </span>
+									</a></li>
+								<li class="nav-item"><a class="nav-link" href="/administrativo/entrada/listar"> <i
+											class="oi oi-spreadsheet"></i> <span>Listar </span>
+									</a></li>
+							</ul>
+							<ul class="nav nav-pills">
+								<li class="nav-item"><span class="nav-link active">Teste
+										Cliente 2</span></li>
+								<li class="nav-item"><a class="nav-link" href="/administrativo/funcionarios/cadastrar">
+										<i class="oi oi-plus"></i> <span>Cadastrar </span>
+									</a></li>
+								<li class="nav-item"><a class="nav-link" href="/administrativo/funcionarios/listar"> <i
+											class="oi oi-spreadsheet"></i> <span>Listar </span>
+									</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+
+	<div class="layout-main">
+
+		<aside>
+
+	</aside>
+	<section class="layout-content" layout:fragment="corpo">
+		Principal</section>
 
 	</div>
 	<footer class="layout-footer">
 		<div class="container">
-			<span class="footer-copy">&copy; 2018 MBallem. Todos os
+			<span class="footer-copy">&copy; 2024 EliPeixoto. Todos os
 				direitos reservados.</span>
 		</div>
 	</footer>
+
 
 	<!-- Bootstrap core JavaScript
     ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
 	<script src="/webjars/jquery/jquery.min.js"></script>
-	<script
-		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script
-		src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 	<script src="/webjars/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
-	<script
-		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
-	<script type="text/javascript">
-		// Toggle do menu ao clicar
+	<script>
 		$(document).ready(function () {
 			$(".sidebar-toggler").click(function () {
 				$(".sidebar").toggleClass("sidebar-open");
-			})
+				$(".dark-overlay").toggleClass("overlay-open");
+			});
+
+			// Feche o menu se clicar na camada de fundo escuro
+			$(".dark-overlay").click(function () {
+				$(".sidebar").removeClass("sidebar-open");
+				$(this).removeClass("overlay-open");
+			});
 		});
+
+		const offcanvasElementList = document.querySelectorAll('.offcanvas')
+		const offcanvasList = [...offcanvasElementList].map(offcanvasEl => new bootstrap.Offcanvas(offcanvasEl))
 	</script>
 </body>
 
