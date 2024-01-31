@@ -22,7 +22,8 @@
 <link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 <link href="/webjars/open-iconic/font/css/open-iconic-bootstrap.min.css"
 	rel="stylesheet" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 <!-- Custom styles for this template -->
 <link href="/css/style.css" rel="stylesheet" />
@@ -83,105 +84,107 @@
 
 				</h2>
 			</div>
-			  <div>
-            <div id="accordionExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneAdmin"
-                            aria-expanded="true" aria-controls="collapseOneAdmin">
-                            Entrada Produtos
-                        </button>
-                    </h2>
-                    <div id="collapseOneAdmin" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <a class="nav-link" href="/administrativo/entrada/cadastrar">
-                                <i class="bi bi-pencil"></i> <span class="span-itens">Cadastrar</span>
-                            </a>
-                            <a class="nav-link" href="/administrativo/entrada/listar">
-                                <i class="bi bi-card-checklist"></i> <span class="span-itens">Listar</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+			<div>
+				<div id="accordionExample">
+					
+							<button class="btn btn-default dropdown-toggle" type="button"
+								id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+								aria-expanded="true">
+								Entrada Produtos 
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+								<li><a class="nav-link" href="/administrativo/entrada/cadastrar">
+									<i class="bi bi-pencil"></i> <span class="span-itens">Cadastrar</span>
+								</a></li>
+								<li><a class="nav-link" href="/administrativo/entrada/listar">
+									<i class="bi bi-card-checklist"></i> <span class="span-itens">Listar</span>
+								</a></li>
+							</ul>
+						
+				
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingThreeAdmin">
+							<button class="accordion-button" type="button"
+								data-bs-toggle="collapse" data-bs-target="#collapseThreeAdmin"
+								aria-expanded="true" aria-controls="collapseThreeAdmin">
+								Funcionários</button>
+						</h2>
+						<div id="collapseThreeAdmin" class="accordion-collapse collapse"
+							aria-labelledby="headingThreeAdmin"
+							data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<a class="nav-link"
+									href="/administrativo/funcionarios/cadastrar"> <i
+									class="bi bi-pencil"></i> <span class="span-itens">Cadastrar</span>
+								</a> <a class="nav-link" href="/administrativo/funcionarios/listar">
+									<i class="bi bi-card-checklist"></i> <span class="span-itens">Listar</span>
+								</a>
+							</div>
+						</div>
+					</div>
 
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThreeAdmin">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeAdmin"
-                            aria-expanded="true" aria-controls="collapseThreeAdmin">
-                            Funcionários
-                        </button>
-                    </h2>
-                    <div id="collapseThreeAdmin" class="accordion-collapse collapse" aria-labelledby="headingThreeAdmin" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <a class="nav-link" href="/administrativo/funcionarios/cadastrar">
-                                <i class="bi bi-pencil"></i> <span class="span-itens">Cadastrar</span>
-                            </a>
-                            <a class="nav-link" href="/administrativo/funcionarios/listar">
-                                <i class="bi bi-card-checklist"></i> <span class="span-itens">Listar</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingFourAdmin">
+							<button class="accordion-button" type="button"
+								data-bs-toggle="collapse" data-bs-target="#collapseFourAdmin"
+								aria-expanded="true" aria-controls="collapseFourAdmin">
+								Estados</button>
+						</h2>
+						<div id="collapseFourAdmin" class="accordion-collapse collapse"
+							aria-labelledby="headingFourAdmin"
+							data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<a class="nav-link" href="/administrativo/estados/cadastrar">
+									<i class="bi bi-pencil"></i> <span class="span-itens">Cadastrar</span>
+								</a> <a class="nav-link" href="/administrativo/estados/listar">
+									<i class="bi bi-card-checklist"></i> <span class="span-itens">Listar</span>
+								</a>
+							</div>
+						</div>
+					</div>
 
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFourAdmin">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourAdmin"
-                            aria-expanded="true" aria-controls="collapseFourAdmin">
-                            Estados
-                        </button>
-                    </h2>
-                    <div id="collapseFourAdmin" class="accordion-collapse collapse" aria-labelledby="headingFourAdmin" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <a class="nav-link" href="/administrativo/estados/cadastrar">
-                                <i class="bi bi-pencil"></i> <span class="span-itens">Cadastrar</span>
-                            </a>
-                            <a class="nav-link" href="/administrativo/estados/listar">
-                                <i class="bi bi-card-checklist"></i> <span class="span-itens">Listar</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingFiveAdmin">
+							<button class="accordion-button" type="button"
+								data-bs-toggle="collapse" data-bs-target="#collapseFiveAdmin"
+								aria-expanded="true" aria-controls="collapseFiveAdmin">
+								Cidades</button>
+						</h2>
+						<div id="collapseFiveAdmin" class="accordion-collapse collapse"
+							aria-labelledby="headingFiveAdmin"
+							data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<a class="nav-link" href="/administrativo/cidades/cadastrar">
+									<i class="bi bi-pencil"></i> <span class="span-itens">Cadastrar</span>
+								</a> <a class="nav-link" href="/administrativo/cidades/listar">
+									<i class="bi bi-card-checklist"></i> <span class="span-itens">Listar</span>
+								</a>
+							</div>
+						</div>
+					</div>
 
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFiveAdmin">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiveAdmin"
-                            aria-expanded="true" aria-controls="collapseFiveAdmin">
-                            Cidades
-                        </button>
-                    </h2>
-                    <div id="collapseFiveAdmin" class="accordion-collapse collapse" aria-labelledby="headingFiveAdmin" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <a class="nav-link" href="/administrativo/cidades/cadastrar">
-                                <i class="bi bi-pencil"></i> <span class="span-itens">Cadastrar</span>
-                            </a>
-                            <a class="nav-link" href="/administrativo/cidades/listar">
-                                <i class="bi bi-card-checklist"></i> <span class="span-itens">Listar</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingSixAdmin">
+							<button class="accordion-button" type="button"
+								data-bs-toggle="collapse" data-bs-target="#collapseSixAdmin"
+								aria-expanded="true" aria-controls="collapseSixAdmin">
+								Produtos</button>
+						</h2>
+						<div id="collapseSixAdmin" class="accordion-collapse collapse"
+							aria-labelledby="headingSixAdmin"
+							data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<a class="nav-link" href="/administrativo/produtos/cadastrar">
+									<i class="bi bi-pencil"></i> <span class="span-itens">Cadastrar</span>
+								</a> <a class="nav-link" href="/administrativo/produtos/listar">
+									<i class="bi bi-card-checklist"></i> <span class="span-itens">Listar</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<hr>
 
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingSixAdmin">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixAdmin"
-                            aria-expanded="true" aria-controls="collapseSixAdmin">
-                            Produtos
-                        </button>
-                    </h2>
-                    <div id="collapseSixAdmin" class="accordion-collapse collapse" aria-labelledby="headingSixAdmin" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <a class="nav-link" href="/administrativo/produtos/cadastrar">
-                                <i class="bi bi-pencil"></i> <span class="span-itens">Cadastrar</span>
-                            </a>
-                            <a class="nav-link" href="/administrativo/produtos/listar">
-                                <i class="bi bi-card-checklist"></i> <span class="span-itens">Listar</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-				<hr>
-
-			 <div class="titulo-itens-menu">
+					<div class="titulo-itens-menu">
 						<h2>Menu Cliente</h2>
 						<div>
 							<div class="accordion-body">
@@ -217,38 +220,40 @@
 			</div>
 		</div>
 	</div>
- 
-
-				<div class="layout-main">
-
-					<aside></aside>
-					<section class="layout-content" layout:fragment="corpo">
-						Principal</section>
-
-				</div>
-				<br><br><br>
-				<footer class="layout-footer">
-					<div class="container">
-						<span class="footer-copy">&copy; 2024 EliPeixoto. Todos os
-							direitos reservados.</span>
-					</div>
-				</footer>
 
 
-				<!-- Bootstrap core JavaScript
+	<div class="layout-main">
+
+		<aside></aside>
+		<section class="layout-content" layout:fragment="corpo">
+			Principal</section>
+
+	</div>
+	<br>
+	<br>
+	<br>
+	<footer class="layout-footer">
+		<div class="container">
+			<span class="footer-copy">&copy; 2024 EliPeixoto. Todos os
+				direitos reservados.</span>
+		</div>
+	</footer>
+
+
+	<!-- Bootstrap core JavaScript
     ================================================== -->
-				<!-- Placed at the end of the document so the pages load faster -->
-				<script src="/webjars/jquery/jquery.min.js"></script>
-				<script
-					src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-				<script
-					src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="/webjars/jquery/jquery.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-				<script src="/webjars/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
-				<script
-					src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-				<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
-				<script>
+	<script src="/webjars/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+	<script>
 				$(document).ready(function () {
 				    $(".sidebar-toggler").click(function () {
 				        $(".sidebar").toggleClass("sidebar-open");

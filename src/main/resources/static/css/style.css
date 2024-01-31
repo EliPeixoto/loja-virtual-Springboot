@@ -126,6 +126,10 @@ i {
 /*
  * Content
  */
+ 
+ .dropdown-menu{
+ border: none;
+ }
 .layout-content {
 	width: 100%;
 	padding-top: 35px;
