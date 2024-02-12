@@ -1,32 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt" xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:th="http://www.thymeleaf.org"
+<html lang="pt" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
 	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 
 <head>
-<title>Loja Virtual com Spring MVC Spring Boot</title>
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport"
-	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-<meta name="description" content="" />
-<meta name="author" content="" />
-<link rel="icon" href="/image/favicon.png" />
+	<title>Loja Virtual com Spring MVC Spring Boot</title>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<link rel="icon" href="/image/favicon.png" />
 
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script type="module"
-	src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script module
-	src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<!-- Bootstrap core CSS -->
-<link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-<link href="/webjars/open-iconic/font/css/open-iconic-bootstrap.min.css"
-	rel="stylesheet" />
-<link rel="stylesheet"
-	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script module src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-<!-- Custom styles for this template -->
-<link href="/css/style.css" rel="stylesheet" />
+	<!-- Bootstrap core CSS -->
+	<link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+	<!-- Custom styles for this template -->
+	<link href="/css/style.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -36,13 +30,12 @@
 				<div class="navbar-header">
 					<div class="navbar-nav">
 						<ul class="nav nav-pills">
-
-							<li class="nav-item"><a class="nav-link" href="/home"> <img
-									class="imagem-logo" th:src="@{/image/logotipo.png}" alt="Home">
-							</a></li>
-							<li class="nav-item"><a class="nav-link" href="#"> <img
-									class="nome" th:src="@{/image/nome.svg}" alt="Nome">
-							</a></li>
+							<li class="nav-item"><a class="nav-link" href="/home"> <img class="imagem-logo"
+										th:src="@{/image/logotipo.png}" alt="Home">
+								</a></li>
+							<li class="nav-item"><a class="nav-link" href="#"> <img class="nome"
+										th:src="@{/image/nome.svg}" alt="Nome">
+								</a></li>
 						</ul>
 					</div>
 				</div>
@@ -50,8 +43,8 @@
 		</nav>
 		<nav class="navbar2" style="height: 800px">
 			<div class="menu-todos">
-				<button class=" btn " type="button" data-bs-toggle="offcanvas"
-					data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+				<button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+					aria-controls="offcanvasExample">
 					<ion-icon id="hamburguer" name="menu-outline" size="large"
 						style="margin-top: 50px; color: white;"></ion-icon>
 					<div class="span-menu">
@@ -59,21 +52,15 @@
 					</div>
 				</button>
 			</div>
-
 		</nav>
 	</header>
 
-
-	<div class="offcanvas offcanvas-start" tabindex="-1"
-		id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+	<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
 		<div class="offcanvas-header">
-			<h5 class="offcanvas-title" id="offcanvasExampleLabel">Olá,
-				usuário!</h5>
-			<button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-				aria-label="Close"></button>
+			<h5 class="offcanvas-title" id="offcanvasExampleLabel">Olá, usuário!</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 		</div>
 		<div class="offcanvas-body">
-
 
 			<div class="titulo-itens-menu">
 				<h2>
@@ -86,124 +73,78 @@
 			</div>
 			<div>
 				<div id="accordionExample">
-					<div>
-						<button class="btn btn-default dropdown-toggle" type="button"
-							id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
-							aria-expanded="true">Entrada Produtos</button>
-						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-							<li><a class="nav-link"
-								href="/administrativo/entrada/cadastrar"> <i
-									class="bi bi-pencil"></i> <span class="span-itens">Cadastrar</span>
-							</a></li>
-							<li><a class="nav-link"
-								href="/administrativo/entrada/listar"> <i
-									class="bi bi-card-checklist"></i> <span class="span-itens">Listar</span>
-							</a></li>
+					<div class="accordion-item dropdown-start">
+						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownEntradaProdutos"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Entrada Produtos</button>
+						<ul class="dropdown-menu end" aria-labelledby="dropdownEntradaProdutos">
+							<li><a class="nav-link" href="/administrativo/entrada/cadastrar"> <i
+										class="bi bi-pencil"></i> <span class="span-itens">Cadastrar</span>
+								</a></li>
+							<li><a class="nav-link" href="/administrativo/entrada/listar"> <i
+										class="bi bi-card-checklist"></i> <span class="span-itens">Listar</span>
+								</a></li>
 						</ul>
 					</div>
-					<div>
-						<button class="btn btn-default dropdown-toggle" type="button"
-							id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
-							aria-expanded="true">Funcionários</button>
-						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-							<li><a class="nav-link"
-								href="/administrativo/funcionarios/cadastrar"> <i
-									class="bi bi-pencil"></i> <span class="span-itens">Cadastrar</span>
-							</a></li>
-							<li><a class="nav-link"
-								href="/administrativo/funcionarios/listar"> <i
-									class="bi bi-card-checklist"></i> <span class="span-itens">Listar</span>
-							</a></li>
+					<div class="accordion-item">
+						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownFuncionarios"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Funcionários</button>
+						<ul class="dropdown-menu" aria-labelledby="dropdownFuncionarios">
+							<li><a class="nav-link" href="/administrativo/funcionarios/cadastrar"> <i
+										class="bi bi-pencil"></i> <span class="span-itens">Cadastrar</span>
+								</a></li>
+							<li><a class="nav-link" href="/administrativo/funcionarios/listar"> <i
+										class="bi bi-card-checklist"></i> <span class="span-itens">Listar</span>
+								</a></li>
 						</ul>
 
 					</div>
-				<div>
-						<button class="btn btn-default dropdown-toggle" type="button"
-							id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
-							aria-expanded="true">Estados</button>
-							
-						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-							<li><a class="nav-link"
-								href="/administrativo/estados/cadastrar"> <i
-									class="bi bi-pencil"></i> <span class="span-itens">Cadastrar</span>
-							</a></li>
-							<li><a class="nav-link"
-								href="/administrativo/estados/listar"> <i
-									class="bi bi-card-checklist"></i> <span class="span-itens">Listar</span>
-							</a></li>
+					<div class="accordion-item">
+						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownEstados"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Estados</button>
+
+						<ul class="dropdown-menu" aria-labelledby="dropdownEstados">
+							<li><a class="nav-link" href="/administrativo/estados/cadastrar"> <i
+										class="bi bi-pencil"></i> <span class="span-itens">Cadastrar</span>
+								</a></li>
+							<li><a class="nav-link" href="/administrativo/estados/listar"> <i
+										class="bi bi-card-checklist"></i> <span class="span-itens">Listar</span>
+								</a></li>
 						</ul>
 
 					</div>
 
-			<div>
-						<button class="btn btn-default dropdown-toggle" type="button"
-							id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
-							aria-expanded="true">Cidades</button>
-							
-						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-							<li><a class="nav-link"
-								href="/administrativo/cidades/cadastrar"> <i
-									class="bi bi-pencil"></i> <span class="span-itens">Cadastrar</span>
-							</a></li>
-							<li><a class="nav-link"
-								href="/administrativo/cidades/listar"> <i
-									class="bi bi-card-checklist"></i> <span class="span-itens">Listar</span>
-							</a></li>
+					<div class="accordion-item">
+						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownCidades"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Cidades</button>
+
+						<ul class="dropdown-menu" aria-labelledby="dropdownCidades">
+							<li><a class="nav-link" href="/administrativo/cidades/cadastrar"> <i
+										class="bi bi-pencil"></i> <span class="span-itens">Cadastrar</span>
+								</a></li>
+							<li><a class="nav-link" href="/administrativo/cidades/listar"> <i
+										class="bi bi-card-checklist"></i> <span class="span-itens">Listar</span>
+								</a></li>
 						</ul>
 
 					</div>
 
-			<div>
-						<button class="btn btn-default dropdown-toggle" type="button"
-							id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
-							aria-expanded="true">Produtos</button>
-							
-						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-							<li><a class="nav-link"
-								href="/administrativo/produtos/cadastrar"> <i
-									class="bi bi-pencil"></i> <span class="span-itens">Cadastrar</span>
-							</a></li>
-							<li><a class="nav-link"
-								href="/administrativo/produtos/listar"> <i
-									class="bi bi-card-checklist"></i> <span class="span-itens">Listar</span>
-							</a></li>
+					<div class="accordion-item">
+						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownProdutos"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Produtos</button>
+
+						<ul class="dropdown-menu" aria-labelledby="dropdownProdutos">
+							<li><a class="nav-link" href="/administrativo/produtos/cadastrar"> <i
+										class="bi bi-pencil"></i> <span class="span-itens">Cadastrar</span>
+								</a></li>
+							<li><a class="nav-link" href="/administrativo/produtos/listar"> <i
+										class="bi bi-card-checklist"></i> <span class="span-itens">Listar</span>
+								</a></li>
 						</ul>
 
 					</div>
 					<hr>
 
-					<div class="titulo-itens-menu">
-						<h2>Menu Cliente</h2>
-						<div>
-							<div class="accordion-body">
 
-								<ul class="nav nav-pills">
-									<li class="nav-item"><span class="nav-link active">Teste
-											Cliente 1</span></li>
-									<li class="nav-item"><a class="nav-link"
-										href="/administrativo/entrada/cadastrar"> <i
-											class="oi oi-plus"></i> <span>Cadastrar </span>
-									</a></li>
-									<li class="nav-item"><a class="nav-link"
-										href="/administrativo/entrada/listar"> <i
-											class="oi oi-spreadsheet"></i> <span>Listar </span>
-									</a></li>
-								</ul>
-								<ul class="nav nav-pills">
-									<li class="nav-item"><span class="nav-link active">Teste
-											Cliente 2</span></li>
-									<li class="nav-item"><a class="nav-link"
-										href="/administrativo/funcionarios/cadastrar"> <i
-											class="oi oi-plus"></i> <span>Cadastrar </span>
-									</a></li>
-									<li class="nav-item"><a class="nav-link"
-										href="/administrativo/funcionarios/listar"> <i
-											class="oi oi-spreadsheet"></i> <span>Listar </span>
-									</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -211,63 +152,22 @@
 
 
 	<div class="layout-main">
-
 		<aside></aside>
 		<section class="layout-content" layout:fragment="corpo">
-			Principal</section>
-
+			Principal
+		</section>
 	</div>
+
 	<br>
 	<br>
 	<br>
 	<footer class="layout-footer">
 		<div class="container">
-			<span class="footer-copy">&copy; 2024 EliPeixoto. Todos os
-				direitos reservados.</span>
+			<span class="footer-copy">&copy; 2024 EliPeixoto. Todos os direitos reservados.</span>
 		</div>
 	</footer>
 
-
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="/webjars/jquery/jquery.min.js"></script>
-	<script
-		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script
-		src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-	<script src="/webjars/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
-	<script
-		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
-	<script>
-				$(document).ready(function () {
-				    $(".sidebar-toggler").click(function () {
-				        $(".sidebar").toggleClass("sidebar-open");
-				        $(".dark-overlay").toggleClass("overlay-open");
-
-				        // Fecha todos os itens do menu ao abrir a barra lateral
-				        $(".accordion-collapse").removeClass("show");
-				    });
-
-				    // Feche o menu se clicar na camada de fundo escuro
-				    $(".dark-overlay").click(function () {
-				        $(".sidebar").removeClass("sidebar-open");
-				        $(this).removeClass("overlay-open");
-				    });
-
-				    // Adiciona um manipulador de eventos para os botões de acordeão
-				    $(".accordion-button").click(function () {
-				        // Fecha todos os outros itens do menu ao clicar em um botão de acordeão
-				        $(".accordion-collapse").not($(this).next()).removeClass("show");
-				    });
-				});
-
-
-		const offcanvasElementList = document.querySelectorAll('.offcanvas')
-		const offcanvasList = [...offcanvasElementList].map(offcanvasEl => new bootstrap.Offcanvas(offcanvasEl))
-	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
-</html>
+</html></html>

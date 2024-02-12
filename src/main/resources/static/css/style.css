@@ -143,12 +143,12 @@ i {
 #loja {
 	text-align: left;
 	text-decoration: none;
-	color: white;span-itens
+	color: white;
 }
 
 .btn-primary{
 	background-color:#232f3e;
-	border-color: transparent;
+	border-color: transparent
 }
 
 /*
@@ -177,7 +177,8 @@ i {
 	margin-left: 0;
 }
 
-.sidebar .nav-link {border-radrgb (255, 255, 0)
+.sidebar .nav-link {
+	border-radrgb: (255, 255, 0);
 	
 }
 
