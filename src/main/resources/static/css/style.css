@@ -20,6 +20,11 @@ body {
 	gap: 20px;
 }
 
+.estilo-form3 {
+	display: flex;
+	gap: 4px;
+}
+
 .botao-add {
 	margin-left: 50px;
 	padding-top: 16px;
