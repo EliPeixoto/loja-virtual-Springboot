@@ -25,6 +25,9 @@ body {
 	gap: 4px;
 }
 
+.espaco{
+	margin-left: 300px
+}
 .botao-add {
 	margin-left: 50px;
 	padding-top: 16px;
