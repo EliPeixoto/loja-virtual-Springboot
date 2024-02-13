@@ -63,16 +63,43 @@ body {
 .topo-grid{
 		background-color:rgb(78, 82, 80);
 }
+
+
+.menu-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
 .span-menu {
 	margin-top: -35px;
-	margin-left: 120px;
+	margin-left: 75px;
+	color: white;
+	width: 250px;
+	height: 60%;
+}
+
+
+.menu-adm {
+	margin-left: -220px;
+	margin-bottom: 190px
+}
+
+.span-inicio {
+	margin-top: -35px;
+	margin-left: 100px;
 	color: white;
 	width: 250px;
 	height: 70%;
+
 }
 
-.menu-todos {
-	margin-left: -150px;
+.menu-inicio {
+	margin-left: -100px;
+	margin-bottom: 200px
+}
+
+.menu-produtos {
+	margin-left: -200px;
 	margin-bottom: 200px
 }
 .construcao img{
