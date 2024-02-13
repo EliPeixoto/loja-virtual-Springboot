@@ -65,7 +65,7 @@ body {
 }
 .span-menu {
 	margin-top: -35px;
-	margin-left: 100px;
+	margin-left: 120px;
 	color: white;
 	width: 250px;
 	height: 70%;
@@ -246,7 +246,6 @@ ion-icon {
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
 
@@ -300,10 +299,10 @@ main{
 	font-size: 12px;
 }
 
-#side-items{
+#side-item{
 	display: flex;
 	flex-direction: column;
-	gap: 8px;
+
 	list-style: none;
 }
 
@@ -311,11 +310,16 @@ main{
 	border-radius: 8px;
 	padding: 14px;
 	cursor: pointer;
-	
+	list-style: none;
+
 }
 
 .side-item.active {
 	background-color: #4f46e5;
+}
+
+i {
+	padding-right: 10px;
 }
 
 .side-item:hover:not(.active),
@@ -326,8 +330,8 @@ main{
 .side-item a{
 	text-decoration: none;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	align-items: flex-start;
+	justify-content: start;
 	color: #0a0a0a;
 
 }
@@ -342,6 +346,7 @@ main{
 	justify-content: center;
 	width: 20px;
 	height: 20px;
+
 }
 
 #logout{
@@ -363,9 +368,8 @@ main{
 
 #open-btn{
 	position: absolute;
-	top: 30px;
-	right: -10px;
-	background-color: #4f46e5;
+	top: 10px;
+	right: 10px;
 	color: #e3e9f7;
 	border-radius: 100%;
 	width: 20px;
@@ -374,16 +378,9 @@ main{
 	cursor: pointer;
 }
 
-#open-btn-icon{
-	transition: transform .3s ease;
-}
-
-.open-sidebar #open-btn-icon{
-	transform: rotate(180deg);
-}
 
 .item-description{
-	width: 150px;
+	width: auto;
 	overflow: hidden; /*impede que os elementos apareçam*/
 	white-space: nowrap; /*impede que o texto quebre*/
 	text-overflow: ellipsis;
@@ -402,7 +399,6 @@ main{
 
 #sidebar.open-sidebar .side-item a{
 	justify-content: flex-start;
-	gap: 14px;
 }
 
 
