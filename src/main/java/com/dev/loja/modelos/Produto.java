@@ -27,7 +27,7 @@ public class Produto implements Serializable{
 	
 	
 	private String descricao;
-	private String valorVenda;
+	private Double valorVenda;
 	private String categoria;
 	private String marca;
 	private Double quantidadeEstoque=0.;
@@ -46,10 +46,10 @@ public class Produto implements Serializable{
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
-	public String getValorVenda() {
+	public Double getValorVenda() {
 		return valorVenda;
 	}
-	public void setValorVenda(String valorVenda) {
+	public void setValorVenda(Double valorVenda) {
 		this.valorVenda = valorVenda;
 	}
 	public String getCategoria() {

@@ -10,7 +10,7 @@
 			<div class="collapse navbar-collapse" id="navbarsExampleDefault">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active"><i class="oi oi-caret-right"></i>
-						<span style="margin-right: 970px;">Lista de Produtos</span></li>
+						<span>Lista de Produtos</span></li>
 				</ul>
 				<a class="btn btn-primary btn-md"
 					href="/administrativo/produtos/cadastrar" role="button"> <span
@@ -39,7 +39,7 @@
 							<td th:text="${produto.descricao}"></td>
 							<td th:text="${produto.quantidadeEstoque}"></td>
 							<td th:text="${produto.valorVenda}"></td>
-	
+							<td><img th:src="@{/administrativo/produtos/mostrarImagem/{imagem}(imagem=${produto.nomeImagem})}" width="100"/></td>
 
 							<td colspan="2"><a class="btn btn-info btn-sm"
 								th:href="@{/administrativo/produtos/editar/{id}(id=${produto.id})}"
